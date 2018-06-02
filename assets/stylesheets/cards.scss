@@ -1,5 +1,6 @@
 .card {
   height: 230px;
+  width: 90%;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
@@ -9,13 +10,7 @@
     border: 10px solid red;
   }
 }
-.card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
-}
+
 .card-category {
   position: absolute;
   top: 10px;
