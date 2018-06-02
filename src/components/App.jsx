@@ -10,6 +10,7 @@ class App extends Component {
       flats: { flats },
       lat: 48.884211,
       lng: 2.34689,
+      name: "Charm at the Steps of the Sacre Coeur/Montmartre"
     };
   }
 
@@ -17,6 +18,7 @@ class App extends Component {
     this.setState({
       lat: props.lat,
       lng: props.lng,
+      name: props.name,
     })
   }
 
@@ -27,7 +29,7 @@ class App extends Component {
           <FlatList flats={this.state.flats} selectFlat={this.selectFlat} />
         </div>
         <div className="right">
-          <Map lat={this.state.lat} lng={this.state.lng} />
+          <Map lat={this.state.lat} lng={this.state.lng} name={this.state.name} />
         </div>
       </div>
     );
